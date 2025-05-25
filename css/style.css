@@ -90,7 +90,7 @@ li {
   --t: 7315.79ms;
   --w: 5.7105cqi;
   &::after {
-    background-image: url(/image/rocket3.png);
+    background-image: url(../image/rocket3.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -132,7 +132,7 @@ li {
   --t: 15315.79ms;
   --w: 4.7105cqi;
   &::after {
-    background-image: url(/image/astronaut3.webp);
+    background-image: url(../image/astronaut3.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -164,7 +164,7 @@ li {
   --t: 10315.79ms;
   --w: 6.7105cqi;
   &::after {
-    background-image: url(/image/ufo6.png);
+    background-image: url(../image/ufo6.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
