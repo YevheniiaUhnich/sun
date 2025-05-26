@@ -40,14 +40,33 @@ li {
     offset-distance: 100%;
   }
 }
+
+@keyframes sunGlow {
+  0% {
+    box-shadow: 0 0 60px rgba(233, 120, 8, 0.8),
+                inset 0 0 40px rgba(233, 160, 87, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 100px rgba(233, 120, 8, 0.9),
+                inset 0 0 70px rgba(233, 160, 87, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 100px rgba(233, 120, 8, 0.8),
+                inset 0 0 40px rgba(233, 160, 87, 0.6);
+  }
+}
+
 .sun {
   --b: radial-gradient(circle, #f9a825 0%, #f9a825 50%, #f9a825 100%);
   --d: 10cqi;
   --w: 5cqi;
   border: 0;
+  animation: sunGlow 3s ease-in-out infinite;
   &::after {
-    background: #f9a825;
-    background: var(--b);
+    background-image: url(../image/sun1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     animation: none;
     offset-path: none;
     place-self: center;
@@ -57,10 +76,13 @@ li {
 .mercury {
   --b: radial-gradient(circle, #f4d03f 0%, #c39c43 100%);
   --d: 15cqi;
-  --t: 2105.26ms;
+  --t: 4105.26ms;
   --w: 2.0526cqi;
   &::after {
-    background: var(--b);
+    background-image: url(../image/mercury1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -68,9 +90,12 @@ li {
   --b: radial-gradient(circle, #f9a825 0%, #f9a825 50%, #f9a825 100%);
   --d: 20cqi;
   --t: 4210.53ms;
-  --w: 2.6053cqi;
+  --w: 2.1053cqi;
   &::after {
-    background: var(--b);
+    background-image: url(../image/venus4.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
